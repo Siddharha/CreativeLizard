@@ -5,6 +5,6 @@ package in.creativelizard.creativelizard.util;
  */
 
 public class ConstantClass {
-     static final String BASE_URL = "http://creativelizard.in/api/";
+     static final String BASE_URL = "https://creativelizard.in/api/";
     public static final String GET_PRODUCT_LIST = "getProductList.php";
 }
