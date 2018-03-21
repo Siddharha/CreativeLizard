@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CreativeLizard.iml" filepath="$PROJECT_DIR$/CreativeLizard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreativeLizard.iml" filepath="$PROJECT_DIR$/CreativeLizard.iml" />
       <module fileurl="file://$PROJECT_DIR$/topeka-base/app.iml" filepath="$PROJECT_DIR$/topeka-base/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/creativelizard-base/creativelizard-base.iml" filepath="$PROJECT_DIR$/creativelizard-base/creativelizard-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creativelizard-base/creativelizard-base.iml" filepath="$PROJECT_DIR$/creativelizard-base/creativelizard-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/creativelizard-instantapp/creativelizard-instantapp.iml" filepath="$PROJECT_DIR$/creativelizard-instantapp/creativelizard-instantapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creativelizard-instantapp/creativelizard-instantapp.iml" filepath="$PROJECT_DIR$/creativelizard-instantapp/creativelizard-instantapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creativelizardapk/creativelizardapk.iml" filepath="$PROJECT_DIR$/creativelizardapk/creativelizardapk.iml" />
       <module fileurl="file://$PROJECT_DIR$/creativelizardapk/creativelizardapk.iml" filepath="$PROJECT_DIR$/creativelizardapk/creativelizardapk.iml" />
       <module fileurl="file://$PROJECT_DIR$/creativelizard-base/topeka-base.iml" filepath="$PROJECT_DIR$/creativelizard-base/topeka-base.iml" />
     </modules>

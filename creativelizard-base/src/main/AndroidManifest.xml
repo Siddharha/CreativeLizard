@@ -12,15 +12,20 @@
         android:supportsRtl="true"
         android:name=".aplications.CreativelizardAplication"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
         <activity android:name=".activities.MainActivity">
-            <tools:validation testUrl="https://creativelizard.in/signing" />
+            <tools:validation testUrl="http://creativelizard.in/apps" />
+            <tools:validation testUrl="https://creativelizard.in/apps" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -29,10 +34,21 @@
                 <data
                     android:scheme="https"
                     android:host="creativelizard.in"
-                    android:pathPrefix="/signin" />
+                    android:pathPrefix="/apps" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="creativelizard.in"
+                    android:pathPattern="/apps" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.DetailsActivity"/>
+        <activity android:name=".activities.DetailsActivity" />
     </application>
 
 </manifest>
