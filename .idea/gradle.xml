@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/topeka-base" />
+            <option value="$PROJECT_DIR$/creativelizard-base" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

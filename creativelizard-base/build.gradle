@@ -1,9 +1,8 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.feature'
 
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "in.creativelizard.creativelizard"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
@@ -13,6 +12,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            baseFeature = true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
