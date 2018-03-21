@@ -1,1 +1,1 @@
-include ':creativelizard-base'
+include ':creativelizard-base', ':creativelizardapk', ':creativelizard-instantapp'

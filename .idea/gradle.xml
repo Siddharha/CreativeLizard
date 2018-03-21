@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/creativelizard-base" />
+            <option value="$PROJECT_DIR$/creativelizard-instantapp" />
+            <option value="$PROJECT_DIR$/creativelizardapk" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
