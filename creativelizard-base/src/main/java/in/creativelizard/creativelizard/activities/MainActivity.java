@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         tvDisplay = findViewById(R.id.tvDisplay);
         apiService = ApiClient.getClient().create(ApiInterface.class);
         rlItems = findViewById(R.id.rlItems);
-        productViewAdapter = new ProductViewAdapter(productListOutputs,R.layout.product_view_cell);
+        productViewAdapter = new ProductViewAdapter(productListOutputs,R.layout.product_view_cell,this);
 
         rlItems.setLayoutManager(layoutManager);
         rlItems.setAdapter(productViewAdapter);

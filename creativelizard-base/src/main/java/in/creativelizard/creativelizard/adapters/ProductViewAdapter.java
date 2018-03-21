@@ -1,5 +1,7 @@
 package in.creativelizard.creativelizard.adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,10 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import in.creativelizard.creativelizard.R;
+import in.creativelizard.creativelizard.activities.DetailsActivity;
+import in.creativelizard.creativelizard.activities.MainActivity;
 import in.creativelizard.creativelizard.beans.ProductItem;
 import in.creativelizard.creativelizard.beans.ProductListOutput;
 
@@ -22,10 +27,12 @@ import in.creativelizard.creativelizard.beans.ProductListOutput;
 
     private ArrayList<ProductItem> productItems;
     private int itemLayout;
+    private Context context;
 
-    public ProductViewAdapter(ArrayList<ProductItem> productItems, int itemLayout) {
+    public ProductViewAdapter(ArrayList<ProductItem> productItems, int itemLayout, Context context) {
         this.productItems = productItems;
         this.itemLayout = itemLayout;
+        this.context = context;
     }
 
     @Override
@@ -39,6 +46,12 @@ import in.creativelizard.creativelizard.beans.ProductListOutput;
        // holder.imgApp
         holder.my_image_view.setImageURI(Uri.parse(productItems.get(position).getImg()));
         holder.tvName.setText(productItems.get(position).getName());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(context, DetailsActivity.class));
+            }
+        });
 
 
     }
